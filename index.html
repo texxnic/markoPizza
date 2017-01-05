@@ -15,7 +15,7 @@
 
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -26,7 +26,7 @@
 	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=wHHOsBqrlT86abLxJn2AR1kZxD4S7Eb9&id=mymap"></script></head>
 <body>
 	<!-- snow -->
-<!-- <canvas id="canvas"></canvas> -->
+
 <!--  snow end -->
 	<div class="start">
 		<div class="container">
@@ -166,7 +166,7 @@
 						<h6>Мексикано</h6>
 					</div>
 					<div class="col-md-2 noPadding paddingTop">
-						<h6 class="orange">500р.</h6>
+						<h6 class="orange">450р.</h6>
 					</div>
 					<div class="col-md-7 noPadding">
 						<p>Тесто, соус пицца, моцарелла, филе куриное, вырезка свиная, перец болгарский-красный, перец болгарский-зеленый, чеддер, зелень. 680гр.</p>
@@ -180,7 +180,7 @@
 						<h6>Пиперони</h6>
 					</div>
 					<div class="col-md-2 noPadding paddingTop">
-						<h6 class="orange">450р.</h6>
+						<h6 class="orange">400р.</h6>
 					</div>
 					<div class="col-md-7 noPadding">
 						<p>Тесто, соус, моцарелла, пиперони. 600гр.</p>
@@ -191,7 +191,7 @@
 						<img src="img/pizzas/philadelphia.png" alt="" class="pizzaMenu">
 					</div>
 					<div class="col-md-5 noPadding paddingTop">
-						<h6 style="font-size: 120%;">Филадельфия</h6>
+						<h6>Филадельфия</h6>
 					</div>
 					<div class="col-md-2 noPadding paddingTop">
 						<h6 class="orange">500р.</h6>
@@ -207,7 +207,7 @@
 						<h6>Барбекю</h6>
 					</div>
 					<div class="col-md-2 noPadding paddingTop">
-						<h6 class="orange">500р.</h6>
+						<h6 class="orange">450р.</h6>
 					</div>
 					<div class="col-md-7 noPadding">
 						<p>Тесто, соус пицца, соус барбекю, филе свиное, филе куриное, шампиньоны, бекон, рукола, моцарелла. 700гр.</p>
@@ -217,10 +217,10 @@
 						<img src="img/pizzas/marko.png" alt="" class="pizzaMenu">
 					</div>
 					<div class="col-md-5 noPadding paddingTop">
-						<h6>Фирменная пицца</h6>
+						<h6>Марко пицца</h6>
 					</div>
 					<div class="col-md-2 noPadding paddingTop">
-						<h6 class="orange">550р.</h6>
+						<h6 class="orange">450р.</h6>
 					</div>
 					<div class="col-md-7 noPadding">
 						<p>Тесто, соус пицца, сыр моцарелла, салями, пиперони, сосиски баварские, ветчина, бикон, перец болгарский зеленый, пармезан, шампиньоны. 790гр.</p>
@@ -632,6 +632,11 @@ $(window).bind('scroll', function(){
 	setInterval(draw, 33);
 }
 
+</script>
+<script>
+	$(function(){
+    if($('body').width() > 500) { $('body').prepend('<canvas id="canvas"></canvas>'); }
+});
 </script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">

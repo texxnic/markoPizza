@@ -17,6 +17,10 @@ canvas {
   position: fixed;
   z-index: 99999999999; }
 
+a[href^="tel"] {
+  color: #F9AE24;
+  text-decoration: none; }
+
 h1 {
   color: white;
   font-family: arkhip,helvetica;
@@ -59,7 +63,7 @@ h5 {
 h6 {
   font-family: arkhip,helvetica;
   color: #3D3030;
-  font-size: 130%; }
+  font-size: 125%; }
 
 p {
   color: #5B5B5B;
@@ -88,7 +92,7 @@ p {
 
 @font-face {
   font-family: arkhip;
-  src: url(/font/arkhip_font.ttf); }
+  src: url(/font/Arkhip_font.ttf); }
 
 @font-face {
   font-family: sensei;
@@ -119,7 +123,7 @@ p {
   background-attachment: fixed;
   background-position: center center; }
 
-@media (max-width: 500px) {
+@media (max-width: 2000px) {
   .start {
     background-attachment: scroll;
     background: url("/img/bg.jpg") center; } }
@@ -430,3 +434,15 @@ i {
 
 .cntcts {
   animation-delay: 1s; }
+
+@media (min-width: 970px) and (max-width: 1200px) {
+  .container {
+    width: 970px; }
+  .listItem {
+    min-height: 150px !important; }
+  .pizzaItem {
+    min-height: 220px !important; }
+  h6 {
+    font-size: 100%; }
+  h5 {
+    font-size: 60%; } }

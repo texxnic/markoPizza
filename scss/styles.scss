@@ -84,10 +84,13 @@ p{
 	z-index: 100;
 	text-align: center;
   margin-top: -20px;
-
+  animation-duration: 2s !important; 
+  
 }
 .jumbo{
   margin-top: 150px;
+  animation-delay: 1.5s;
+  animation-duration: 2s !important; 
 }
 .logo{
 	display: block;
@@ -510,5 +513,8 @@ i{
   min-height:500px;
   border-radius:20px;
   position: relative
+}
+.cntcts{
+  animation-delay: 1s;
 }
   

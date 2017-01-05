@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -24,7 +26,7 @@
 	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=wHHOsBqrlT86abLxJn2AR1kZxD4S7Eb9&id=mymap"></script></head>
 <body>
 	<!-- snow -->
-<canvas id="canvas"></canvas>
+<!-- <canvas id="canvas"></canvas> -->
 <!--  snow end -->
 	<div class="start">
 		<div class="container">
@@ -44,14 +46,14 @@
 				</div>
 			</div>
 			<div class="hidden-xs">
-				<div class="col-md-4 col-sm-4 cntcts">
+				<div class="col-md-4 col-sm-4 cntcts fadeIn animated">
 					<h5><img src="img/smartphone.svg" class="ico">+7(953)323-10-01 <nobr><img src="img/clock.svg" class="ico icoPad">10:00-22:00(Пн-Вс)</h5></nobr>
 					
 				</div>
-				<div class="col-md-2 col-sm-2 col-md-offset-1 col-sm-offset-1 logoBox">
+				<div class="col-md-2 col-sm-2 col-md-offset-1 col-sm-offset-1 logoBox animated fadeInUp">
 						<img src="img/logo.svg" class="logo">
 				</div>
-				<div class="col-md-4 col-md-offset-1 col-sm-offset-1 col-sm-4 cntcts hidden-xs">
+				<div class="col-md-4 col-md-offset-1 col-sm-offset-1 col-sm-4 cntcts hidden-xs fadeIn animated">
 						
 					<h5 class="pull-right"><img src="img/placeholder.svg" class="ico">г. Малоярославец, ул. Московская 66</h5>
 						
@@ -62,7 +64,7 @@
 				<h1 class="visible-xs mobile">Лучшая доставка вкуснейшей пиццы по Малоярославцу</h1>
 
 			
-    <div class="col-md-10 jumbo hidden-xs">
+    <div class="col-md-10 jumbo hidden-xs animated fadeInUp">
     	<div class="row"><nobr><h1>ЛУЧШАЯ</h1> <div class="orangeBox"><h1>ДОСТАВКА</h1></div></nobr></div>
     	<div class="row jumbMarg"><nobr><h1><div class="orangeBox">ВКУСНЕЙШЕЙ</div>ПИЦЦЫ</h1></div></nobr>
     	<h1>По Малоярославцу<br>+7(953)323-10-01</h1>
@@ -88,8 +90,8 @@
 </a>
 	</div>
 	<div class="menu">
-		<img src="img/pizza-min.png" alt="" class="pizza1">
-		<img src="img/pizza-min.png" alt="" class="pizza2">
+		<img src="img/pizza-min.png" alt="" class="pizza1 fadeInLeft animated">
+		<img src="img/pizza-min.png" alt="" class="pizza2 animated fadeInRight">
 		<img src="img/paint-hi-min.png" alt="" class="paint">
 		
 			<div class="menuH3"><h3>МЕНЮ</h3></div>
@@ -631,5 +633,34 @@ $(window).bind('scroll', function(){
 }
 
 </script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter41948834 = new Ya.Metrika({
+                    id:41948834,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/41948834" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </body>
 </html>

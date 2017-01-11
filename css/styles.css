@@ -10,7 +10,8 @@ html, body, #fullheight {
 
 body {
   /*You can use any kind of background here.*/
-  background: #6b92b9; }
+  background: #6b92b9;
+  overflow-x: hidden; }
 
 canvas {
   display: block;
@@ -366,8 +367,8 @@ p {
 .news {
   position: fixed;
   right: 0;
-  magrin-right: 0;
-  margin: auto;
+  top: 50%;
+  margin-top: -225px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   opacity: 0.999999;
@@ -434,6 +435,16 @@ i {
 
 .cntcts {
   animation-delay: 1s; }
+
+@media (max-width: 1200px) {
+  .newsPlash {
+    width: 30px; }
+  .newsPlash h6 {
+    margin-right: 9px; } }
+
+@media (max-width: 400px) {
+  h5 {
+    font-size: 70%; } }
 
 @media (min-width: 970px) and (max-width: 1200px) {
   .container {

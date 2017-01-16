@@ -79,8 +79,8 @@ h6{
 
 p{
   color: $gray;
-  font-family: bodoni, helvetica,sans-serif;
-  font-size: 130%;
+  font-family: story, bodoni, helvetica,sans-serif;
+  font-size: 110%;
   line-height:100%;
 
 }
@@ -118,6 +118,11 @@ p{
 @font-face {
     font-family: bodoni;
     src: url(/font/bodoni.ttf);
+}
+
+@font-face {
+    font-family: story;
+    src: url(/font/Story_Regular.otf);
 }
 .ico{
 	width: 18px;
@@ -474,7 +479,7 @@ i{
   transform:rotate(180deg);
 }
 .listItem{
-  min-height:110px !important;
+  height:120px !important;
 }
 .pizzaItem{
   min-height:190px !important;
